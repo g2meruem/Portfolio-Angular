@@ -25,22 +25,31 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/css/style.css",
+              "src/assets/vendor/aos/aos.css",
+              "src/assets/vendor/bootstrap/css/bootstrap.min.css",
+              "src/assets/vendor/bootstrap-icons/bootstrap-icons.css",
+              "src/assets/vendor/boxicons/css/boxicons.min.css",
+              "src/assets/vendor/glightbox/css/glightbox.min.css",
+              "src/assets/vendor/swiper/swiper-bundle.min.css"
             ],
-            "scripts": []
+
+            "scripts": [
+              "src/assets/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
                 }
               ],
               "outputHashing": "all"
